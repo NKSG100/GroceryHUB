@@ -24,8 +24,7 @@ const authSeller = async (req, res, next) => {
           .status(401)
           .json({
             success: false,
-            message: "Unauthorized (Seller Authentication Failed)",
-            error: error.message,
+            message: error.message,
           });
       }
 }

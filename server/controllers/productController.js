@@ -23,8 +23,7 @@ export const addProduct = async (req, res) => {
         console.log(error.message);
         return res.json({
             success: false,
-            message: "Error : Product not added",
-            error: error.message,
+            message: error.message
         })
     }
 }
@@ -42,8 +41,7 @@ export const productList = async (req, res) => {
         console.log(error.message);
         return res.json({
             success: false,
-            message: "Error : Product list not fetched",
-            error: error.message,
+            message: error.message
         })
     }
 }
@@ -62,8 +60,7 @@ export const productById = async (req, res) => {
         console.log(error.message);
         return res.json({
             success: false,
-            message: "Error : Product not fetched by ID",
-            error: error.message,
+            message: error.message
         })
     }
 }
@@ -81,8 +78,7 @@ export const changeStock = async (req, res) => {
         console.log(error.message);
         return res.json({
             success: false,
-            message: "Error : Product stock status not updated",
-            error: error.message,
+            message: error.message
         })
     }
 }

@@ -47,8 +47,7 @@ export const register = async (req, res) => {
     console.error("Error registering user:", error);
     return res.json({
       success: false,
-      message: "Error registering user",
-      error: error.message,
+      message: error.message
     });
   }
 }
@@ -95,8 +94,7 @@ export const login = async (req, res) => {
     console.error("Error logging in user:", error);
     return res.json({
       success: false,
-      message: "Login Failed",
-      error: error.message,
+      message: error.message
     });
   }
 }
@@ -113,7 +111,7 @@ export const isAuth = async (req, res) => {
     });
   } catch (error) {
     console.error("Error in authentication: ", error);
-    return res.status(401).json({ success: false, message: "Unauthorized (isAuth Failed)", error: error.message });
+    return res.status(401).json({ success: false, message: error.message });
   }
 }
 
@@ -133,8 +131,7 @@ export const logout = async (req, res) => {
     console.error("Error logging out user: ", error);
     return res.json({
       success: false,
-      message: "Logout Failed",
-      error: error.message,
+      message: error.message,
     });
   }
 }

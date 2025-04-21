@@ -36,8 +36,7 @@ export const sellerLogin = async (req, res) => {
         console.error("Error logging in seller:", error);
         return res.json({
             success: false,
-            message: "Error logging in seller",
-            error: error.message,
+            message: error.message
         });
     }
 };
@@ -50,7 +49,7 @@ export const isSellerAuth = async (req, res) => {
     });
   } catch (error) {
     console.error("Error in Seller authentication: ", error);
-    return res.status(401).json({ success: false, message: "Unauthorized (Seller isAuth Failed)", error: error.message });
+    return res.status(401).json({ success: false, message: error.message });
   }
 }
 
@@ -70,8 +69,7 @@ export const sellerLogout = async (req, res) => {
       console.error("Error logging out Seller: ", error);
       return res.json({
         success: false,
-        message: "Seller Logout Failed",
-        error: error.message,
+        message: error.message
       });
     }
   }

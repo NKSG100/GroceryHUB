@@ -36,8 +36,7 @@ export const placeOrderCOD = async (req, res) => {
         console.log(error.message);
         return res.json({
             success: false,
-            message: "Error : Order not placed",
-            error: error.message,
+            message: error.message
         })
     }
 }
@@ -115,8 +114,7 @@ export const placeOrderStripe = async (req, res) => {
         console.log(error.message);
         return res.json({
             success: false,
-            message: "Error : Order not placed",
-            error: error.message,
+            message: error.message
         })
     }
 }
@@ -194,8 +192,7 @@ export const getUserOrders = async (req, res) => {
         console.log(error.message);
         return res.json({
             success: false,
-            message: "Error : Orders not fetched",
-            error: error.message,
+            message:  error.message
         })
     }
 }
@@ -216,8 +213,7 @@ export const getAllOrders = async (req, res) => {
         console.log(error.message);
         return res.json({
             success: false,
-            message: "Error : All Orders not fetched",
-            error: error.message,
+            message: error.message
         })
     }
 }

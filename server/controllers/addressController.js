@@ -13,8 +13,7 @@ export const addAddress = async (req, res) => {
         console.log(error.message);
         return res.json({
             success: false,
-            message: "Error : Address not added",
-            error: error.message,
+            message: error.message
         })
     }
 }
@@ -33,8 +32,7 @@ export const getAddress = async (req, res) => {
         console.log(error.message);
         return res.json({
             success: false,
-            message: "Error : Address not fetched",
-            error: error.message,
+            message: error.message
         })
     }
 }

@@ -34,7 +34,7 @@ The application also includes an admin panel for managing products and viewing a
 - **Frontend**: React.js
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
-- **Payment Integration**: (e.g., Razorpay / Stripe - replace with your actual service)
+- **Online Payment Integration**: Stripe
 
 ---
 

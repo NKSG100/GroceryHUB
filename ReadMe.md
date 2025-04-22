@@ -42,47 +42,47 @@ The application also includes an admin panel for managing products and viewing a
 
 ### Clone the project
 
-git clone https://github.com/NKSG100/GroceryHUB.git
-cd GroceryHUB
+git clone https://github.com/NKSG100/GroceryHUB.git  
+cd GroceryHUB  
 
-### Backend Setup
+### Backend Setup  
 
-cd server
-npm install
-npm start
+cd server  
+npm install  
+npm start  
 
 
-### Frontend Setup
+### Frontend Setup  
 
-cd client
-npm install
-npm start
+cd client  
+npm install  
+npm start  
 
-> Make sure to configure your `.env` files for both frontend and backend.
+> Make sure to configure your `.env` files for both frontend and backend.  
 
-.env in server should have:
-MONGODB_URI
-JWT_SECRET
-NODE_ENV
+.env in server should have:  
+MONGODB_URI  
+JWT_SECRET  
+NODE_ENV  
 
-SELLER_EMAIL
-SELLER_PASSWORD
-
-CLOUDINARY_CLOUD_NAME
-CLOUDINARY_API_KEY
-CLOUDINARY_API_SECRET
-
-STRIPE_PUBLISHABLE_KEY
-STRIPE_SECRET_KEY
-STRIPE_WEBHOOK_SECRET
-
-.env in client should have:
-VITE_BACKEND_URL
-
-(/* For Privacy Reasons env variables are not uploaded on Github*/)
-
-### 🎉 Thank you for checking out **GroceryHUB**!
-
-If you found this project helpful or inspiring, feel free to ⭐ star the repo and share it with others.
-
-Happy Coding! 🚀
+SELLER_EMAIL  
+SELLER_PASSWORD  
+  
+CLOUDINARY_CLOUD_NAME  
+CLOUDINARY_API_KEY  
+CLOUDINARY_API_SECRET  
+  
+STRIPE_PUBLISHABLE_KEY  
+STRIPE_SECRET_KEY  
+STRIPE_WEBHOOK_SECRET  
+  
+.env in client should have:  
+VITE_BACKEND_URL  
+  
+(/* For Privacy Reasons env variables are not uploaded on Github*/)  
+  
+### 🎉 Thank you for checking out **GroceryHUB**!  
+  
+If you found this project helpful or inspiring, feel free to ⭐ star the repo and share it with others.  
+  
+Happy Coding! 🚀  

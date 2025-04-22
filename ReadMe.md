@@ -42,7 +42,7 @@ The application also includes an admin panel for managing products and viewing a
 
 ### Clone the project
 
-git clone https://github.com/your-username/GroceryHUB.git
+git clone https://github.com/NKSG100/GroceryHUB.git
 cd GroceryHUB
 
 ### Backend Setup
